@@ -85,3 +85,6 @@ _git ignore을 미리 만들어서 커밋하는 상황을 방지하자_
 [⭐️이그노어 참조사이트](https://gitignore.io/)
 
 ---
+
+[🪐git 초심자사이트](https://backlog.com/git-tutorial/kr/intro/intro1_1.html)
+[🌎git 책](https://git-scm.com/book/ko/v2/시작하기-버전-관리란%3F)
