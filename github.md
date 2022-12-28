@@ -39,9 +39,11 @@
   ### _주의점 : push 할 때는 인증 정보가 필수적이여야 한다._
 
 * Q&A
-  수정 후는 어떻게 해야할까 ?
-  ➡️ 수정 후 > git status(확인) > git add . > git commit > git push main
-  (git init은 git 파일을 생성하는것 이기 때문에 안해도 된다.)
+
+        수정 후는 어떻게 해야할까 ?
+        ➡️ 수정 후 > git status(확인) > git add . > git commit -m '텍스트' > git push main
+        (git init은 git 파일을 생성하는것 이기 때문에 안해도 된다.)
+
   </br>
 
 - **원격저장소 ➡️ 로컬저장소 Pull**
