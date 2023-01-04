@@ -61,31 +61,49 @@
 # for char in a [::-1]:
 #     print(char)
 
-# 정수 두 개를 입력 받고, 두 수 사이의 정수를 오름차순으로 출력하세요.
+#정수 두 개를 입력 받고, 두 수 사이의 정수를 오름차순으로 출력하세요.
+#두 값이 같으면 False를 출력하세요
+
+# a = int(input('첫 번째 정수를 입력하세요 >'))
+# b = int(input('두 번째 정수를 입력하세요 >'))
+
+# if a == b :
+#     print('False')
+# elif a > b :
+#     for i in range(b+1,a):
+#         print(i)
+# elif a < b :
+#     for j in range(a+1,b):
+#         print(j)
+
+
+
+# 정수 두 개를 입력 받고, 두 수 사이의 정수를 내림차순으로 한 줄에 모두 출력하세요.
+
 # 두 값이 같으면 False를 출력하세요
 
-a = int(input('첫번째 정수를 입력하세요 >'))
-b = int(input('두번째 정수를 입력하세요 >'))
+# a = int(input('첫번째 정수를 입력하세요 >'))
+# b = int(input('두번째 정수를 입력하세요 >'))
 
-if a==b:
-    print("False")
-elif a > b:
-    for i in range(a-1,b,-1):
-        print(i, end=(' '))
-elif a < b :
-    for j in range(b-1,a,-1):
-        print(j, end=(' '))
+# if a==b:
+#     print("False")
+# elif a > b:
+#     for i in range(a-1,b,-1):
+#         print(i, end=(' '))
+# elif a < b :
+#     for j in range(b-1,a,-1):
+#         print(j, end=(' '))
 
 # 정수 한 개를 입력 받고, 1 부터 입력 값 사이의 정수 중 홀수만 출력하세요.
 # 입력 값이 1보다 작으면 False를 출력하세요.
 
 # a = int(input('정수를 입력하세요 >'))
 
-# if a>1 :
+# if a > 1 :
 #     for i in range(1,a,2):
 #         print(i)
 
-# else :
+# elif a < 1:
 #     print("False")
 
 # 구구단을 출력하세요.
