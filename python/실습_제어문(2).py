@@ -35,40 +35,40 @@
 
 # 문제 4
 
-# 정수만 저장한 리스트가 주어집니다.
-# 리스트에 저장된 정수들의 평균을 출력하세요.
-# 단, len() / sum() 함수는 사용하지 마세요.
+정수만 저장한 리스트가 주어집니다.
+리스트에 저장된 정수들의 평균을 출력하세요.
+단, len() / sum() 함수는 사용하지 마세요.
 
-# number_list = [2, 4, 6]
-# a = 0
-# b = 0
+number_list = [2, 4, 6]
+a = 0
+b = 0
 
-# for i in number_list:
-#     a += i
-#     b += 1
+for i in number_list:
+    a += i
+    b += 1
 
-# avg = a / b
+avg = a / b
 
-# print(avg)
+print(avg)
 
-# 문제 5
+문제 5
 
-# 정수만 저장한 리스트가 주어집니다.
-# 리스트에 저장된 정수들의 곱을 출력하세요.
+정수만 저장한 리스트가 주어집니다.
+리스트에 저장된 정수들의 곱을 출력하세요.
 
-# number_list = [-1, -2, -3]
-# a = 1
-# for i in number_list:
-#     a *= i
-# print(abs(a))
+number_list = [-1, -2, -3]
+a = 1
+for i in number_list:
+    a *= i
+print(abs(a))
 
-# 문제 6
+문제 6
 
-# 양의 정수만 저장한 리스트가 주어집니다.
-# 리스트에 저장된 정수 중 가장 큰 값을 출력하세요.
-# 단, max() 함수는 사용하지 마세요.
+양의 정수만 저장한 리스트가 주어집니다.
+리스트에 저장된 정수 중 가장 큰 값을 출력하세요.
+단, max() 함수는 사용하지 마세요.
 
-number_list = [1, 1, 1]
+number_list = [1, 2, 3, 4, 5]
 max = 0
 
 for i in number_list:
