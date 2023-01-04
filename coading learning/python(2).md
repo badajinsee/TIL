@@ -118,8 +118,8 @@
 - pow(base, exp, mod=none)
   base의 exp 거듭제곱
 
-\*round(number, ndigit=None)
-반올림
+* round(number, ndigit=None)
+  반올림
 
 - map(function, iterable)
   순회 가능한 데이터구조의 모든 요소에 함수 적용하고 그 결과를 map object로 반환
