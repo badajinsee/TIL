@@ -76,15 +76,30 @@
 #         print(-1)
 
 
-a = list(map(int,input('양의 정수를 입력하세요 > ')))
-# a = int(input('양의 정수를 입력하세요 >'))
-b =[]
+# 강사님 풀이 (10을 나눠서 나머지 더하기, for로 다루기 힘듬, while이용)
 
-try:
-    for i in a :
-     if i > 0 : 
-        b.append(i)
-    print(sum(b))
+# while 사용
+# 반복적으로 n을 10 으로 나눈 몫,
+# n이 0보다 클 때 계속 반복 ! 
+# 결과값은 n을 10으로 나눈 나머지를 더해나갈 것이다!
 
-except:
+n = int(input())
+
+if n < 0:
     print(-1)
+else:
+    result = 0
+    while n > 0:
+        result += n % 10 # 먼저 나머지 찾기 ? 
+        n //= 10
+        print(result)
+
+# 문자열 사용 str()
+
+# n = input()
+# result = 0
+
+# for i in n:
+#     result += int(i)
+# print(result)
+
