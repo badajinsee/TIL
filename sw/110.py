@@ -47,13 +47,27 @@
 
 # 2072 홀수만 더하기
 
+# T = int(input())
+
+# for t in range(1,T+1):
+#     a = list(map(int, input().split()))
+#     b = 0
+#     for i in a:
+#         if i % 2 == 1:
+#             b += i
+#     print(f'#{t} {b}')
+        
+# 2070 큰놈, 작은놈, 같은놈 
+
 T = int(input())
 
-for t in range(1,T+1):
-    a = list(map(int, input().split()))
-    b = 0
-    for i in a:
-        if i % 2 == 1:
-            b += i
-    print(f'#{t} {b}')
-        
+for t in range(1, T+1):
+    a, b = map(int,input().split())
+    if a > b :
+        print(f'#{t} >')
+    elif a == b :
+        print(f'#{t} =')
+    elif a < b :
+        print(f'#{t} <')
+
+    

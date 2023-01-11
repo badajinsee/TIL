@@ -3,17 +3,21 @@
 # 만약, 문자열에서 e 가 없으면 -1 을 출력하세요.
 
 # a = input('문자열을 입력하세요 >')
-# list = []
-# count = 0
+# result = -1
 
-# for i in a:
-#     if i in 'e':
-#         # b.append(i)
-#         count += 1
-#         print(count)
-#     # else i not in 'e':
-#     #     print(-1)
+# for index in range(len(a)):
+#     if a[index] == 'e':
+#         print(index)
+#         break
+# else:
+#     print(-1)  # 방법 1 
 
+# a = input('문자열을 입력하세요 >')
+# result = -1
+# for i in range(len(a)):
+#     if a[i] == 'e':
+#         result = index
+# print(result) # 방법 2 
 
 # 문제 2 
 # 문자열을 입력받고, 각 단어의 등장 횟수를 출력하세요.
@@ -41,6 +45,13 @@
 #         a.remove('e')
 # c = ''.join(a)
 # print(c)
+
+# a = input('문자열을 입력하세요 >')
+# newstring = " "
+# for i in a:
+#     if i != 'e':
+#         newstring += i 
+# print(newstring)
 
 # 문제 4
 # 문자열과 알파벳을 공백으로 구분해서 입력받고,문자열에서 입력한 알파벳의 개수를 출력하세요.
@@ -83,16 +94,16 @@
 # n이 0보다 클 때 계속 반복 ! 
 # 결과값은 n을 10으로 나눈 나머지를 더해나갈 것이다!
 
-n = int(input())
+# n = int(input())
 
-if n < 0:
-    print(-1)
-else:
-    result = 0
-    while n > 0:
-        result += n % 10 # 먼저 나머지 찾기 ? 
-        n //= 10
-        print(result)
+# if n < 0:
+#     print(-1)
+# else:
+#     result = 0
+#     while n > 0:
+#         result += n % 10 # 먼저 나머지 찾기 ? 
+#         n //= 10
+#         print(result)
 
 # 문자열 사용 str()
 
