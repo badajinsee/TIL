@@ -11,12 +11,12 @@
    
 # 아주 간단한 계산기 
 
-# a, b = list(map(int,input().split()))
+a, b = list(map(int, input().split()))
 
-# print(a + b)
-# print(a - b)
-# print(a * b)
-# print(int(a/b)) # 소숫점 이하 버리기 위해 정수 int , a//b도 가능 
+print(a + b)
+print(a - b)
+print(a * b)
+print(int(a / b)) # 소숫점 이하 버리기 위해 정수 int , a//b도 가능 
 
 # print(a+b, a-b, a*b, int(a/b),sep='\n') # 한줄로 sep = '\n'
 
@@ -59,15 +59,15 @@
         
 # 2070 큰놈, 작은놈, 같은놈 
 
-T = int(input())
+# T = int(input())
 
-for t in range(1, T+1):
-    a, b = map(int,input().split())
-    if a > b :
-        print(f'#{t} >')
-    elif a == b :
-        print(f'#{t} =')
-    elif a < b :
-        print(f'#{t} <')
+# for t in range(1, T+1):
+#     a, b = map(int,input().split())
+#     if a > b :
+#         print(f'#{t} >')
+#     elif a == b :
+#         print(f'#{t} =')
+#     elif a < b :
+#         print(f'#{t} <')
 
     
