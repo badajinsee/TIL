@@ -8,11 +8,15 @@
 
 #
 
+👒
+
 [깃정리](https://github.com/badajinsee/TIL/blob/main/coading%20learning/git.md)
 
 [깃헙정리](https://github.com/badajinsee/TIL/blob/main/coading%20learning/github.md)
 
 #
+
+👒
 
 [파이썬\_1](https://github.com/badajinsee/TIL/blob/main/coading%20learning/python.md)
 
@@ -24,6 +28,12 @@
 
 [파이썬\_method](https://github.com/badajinsee/TIL/blob/main/coading%20learning/method.md)
 
-[파이썬\_함수](https://github.com/badajinsee/TIL/blob/main/coading%20learning/function.md)
+[파이썬\_사용자 정의함수](https://github.com/badajinsee/TIL/blob/main/coading%20learning/function.md)
 
 #
+
+👒
+
+[파이썬\_이차원리스트](https://github.com/badajinsee/TIL/blob/main/coading%20learning/2list.md)
+
+[파이썬\_완전탐색](https://github.com/badajinsee/TIL/blob/main/coading%20learning/echaustive%20search.md)
