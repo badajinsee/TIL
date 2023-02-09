@@ -39,3 +39,13 @@
 [파이썬\_완전탐색](https://github.com/badajinsee/TIL/blob/main/coading%20learning/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/echaustive%20search.md)
 
 [파이썬\_깊이우선탐색(DFS)](https://github.com/badajinsee/TIL/blob/main/coading%20learning/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DFS.md)
+
+---
+
+👒
+
+[RDBMS](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/First.md)
+
+[workbench_My sql실행](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/workbench.md)
+
+[SQL_DQL](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/Sql.md)
