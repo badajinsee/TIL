@@ -2,11 +2,11 @@
 
 [🌊 블로그](https://jins-coadinglearn.tistory.com/)
 
-#
+---
 
 🪴[마크다운정리](https://github.com/badajinsee/TIL/blob/main/coading%20learning/markdown.md)
 
-#
+---
 
 👒
 
@@ -14,7 +14,7 @@
 
 [깃헙정리](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Git/github.md)
 
-#
+---
 
 👒
 
@@ -30,7 +30,7 @@
 
 [파이썬\_사용자 정의함수](https://github.com/badajinsee/TIL/blob/main/coading%20learning/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EA%B8%B0%EB%B3%B8/%20define%20function.md)
 
-#
+---
 
 👒
 
