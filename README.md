@@ -49,3 +49,5 @@
 [workbench_My sql실행](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/workbench.md)
 
 [SQL_DQL](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/Sql.md)
+
+[SQL_DQL2](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/DQL_2.md)
