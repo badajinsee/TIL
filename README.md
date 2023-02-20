@@ -43,11 +43,22 @@
 ---
 
 👒
-
-[RDBMS](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/First.md)
-
 [workbench_My sql실행](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/workbench.md)
 
-[SQL_DQL](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/Sql.md)
+[RDBMS](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/SQL0.md)
 
-[SQL_DQL2](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/DQL_2.md)
+[SQL](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/SQL1.md)
+
+[SQL_DQL](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/DQL_2.md)
+
+[SQL_DDL](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/DDL5.md)
+
+[SQL_DML](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/DML6.md)
+
+[SQL_JOIN](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/JOIN7.md)
+
+[SQL_Subquery](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/Subquery8.md)
+
+[SQL\_고급](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Data_base/advanced9.md)
+
+---
