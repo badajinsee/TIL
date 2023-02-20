@@ -9,7 +9,7 @@
 
 - SQL 언어를 구성하는 가장 기본적인 코드
 
-```
+```SQL
 SELECT column_name FROM table_name;
 
 - 대소문자를 구분하지 않음 > 하지만 대문자로 작성하는것을 권장
@@ -48,7 +48,7 @@ SELECT column_name FROM table_name;
 
 ---
 
-```
+```SQL
 SELECT
     slect_list
 FROM
@@ -59,7 +59,7 @@ FROM
 
 ---
 
-```
+```SQL
 SELECT
     select_list AS name
 FROM
@@ -70,7 +70,7 @@ FROM
 
 ---
 
-```
+```SQL
 SELECT
     a * b  AS 총액
 FROM
@@ -83,7 +83,7 @@ FROM
 
 ---
 
-```
+```SQL
 SELECT
     slect_list
 FROM

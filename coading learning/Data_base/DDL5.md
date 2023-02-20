@@ -7,7 +7,7 @@
 
 # 🫧 CREATE
 
-```
+```SQL
 CREATE TABLE table_name(
     column_1 data_type,
     column_2 data_type,
@@ -57,13 +57,13 @@ SHOW COLUMNS FROM examples; > 테이블 구조 확인
 
 # 🫧 DELETE TABLE_DROP
 
-```
+```SQL
 DROP TABLE table_name;
 ```
 
 # 🫧 Modifying TABLE \_ ALTER
 
-```
+```SQL
 ALTER TABLE ADD > 필드 추가
 
 ALTER TABLE MODIFY > 필드 속성 변경
@@ -74,7 +74,7 @@ ALTER TABLE DROP COLUMN > 필드 삭제
 
 ```
 
-```
+```SQL
 ALTER TABLE
     table_nmae
 ADD
@@ -92,7 +92,7 @@ ADD
 
 ## ✨ Modify
 
-```
+```SQL
 ALTER TABLE
     examples
 MODIFY
@@ -103,7 +103,7 @@ MODIFY
 
 ## ✨ CHANGE COLUMN
 
-```
+```SQL
 ALTER TABLE
     examples
 CHANGE COLUMN
@@ -114,7 +114,7 @@ CHANGE COLUMN
 
 ## ✨ ALTER DROP COLUMN
 
-```
+```SQL
 ALTER TABLE
     table_name
 DROP COLUMN

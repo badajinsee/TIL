@@ -2,7 +2,7 @@
 
 - 조회 결과에서 중복된 레코드를 제거
 
-```
+```SQL
 SELECT DISTINCT
     select_list
 FROM
@@ -15,7 +15,7 @@ FROM
 
 - 조회 시 특정 검색 조건을 지정
 
-```
+```SQL
 SELECT
     select_list
 FROM
@@ -27,7 +27,7 @@ WHERE
 - FROM clause 뒤에 위치
 - 비교연산자 및 논리연산자(AND, OR, NOT등)를 사용하는 구문이 사용됨
 
-```
+```SQL
 * 필드 값이 아닐 경우
 
 WHERE
@@ -65,7 +65,7 @@ WHERE
 
 - 조회하는 레코드 수를 제한
 
-```
+```SQL
 SELECT
     select_list
 FROM
@@ -84,7 +84,7 @@ LIMIT 3, 5 의 경우
 
 - 레코드를 그룹화하여 요약본 생성 with 집계 함수
 
-```
+```SQL
 SELECT
     c1, c2, . . ., cn, aggregate_function(ci)
 FROM
@@ -102,7 +102,7 @@ GROUP BY
 
 - GROUP BY와 함께 사용한다 GROUP BY가 없다면 WHERE 처럼 작동
 
-```
+```SQL
 SELECT
     country, AVG(credit)
 FROM
