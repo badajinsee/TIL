@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 500px;
+        border: 1px solid black;
+
+        display: flex;
+        /* 부모 요소 선언이 첫번째 */
+
+        flex-direction: row;
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+
+        /* 주축 변경, row는 기본 값 */
+        /* row-reverse 오른쪽 > 왼쪽 */
+        /* column-reverse 아래 > 위쪽  */
+
+        /* 개행 */
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */
+
+        /* 기본적으로 nowrap */
+        /* wrap: 표기 할수 없으면 다음행으로 보냄 */
+
+        /* 주축 정렬 */
+        /* justify-content: center; */
+        /* 중앙정렬 */
+        /* justify-content: flex-end; */
+        /* 우측 정렬 */
+        /* justify-content: flex-start; */
+        /* 좌측정렬 */
+
+        /* 교차축 정렬 */
+        /* align-content: flex-start; */
+        /* align-content: center; */
+        /* align-content: flex-end; */
+
+        /* align-items: center; */
+      }
+
+      .post {
+        background-color: grey;
+        border: 1px solid black;
+        margin: 0.5rem;
+        padding: 0.5rem;
+      }
+
+      .item1 {
+        align-self: center;
+      }
+
+      .item2 {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="post item1">
+        <h2>Post Title 1</h2>
+        <p>Post Content 1</p>
+      </div>
+      <div class="post item2">
+        <h2>Post Title 2</h2>
+        <p>Post Content 2</p>
+      </div>
+      <div class="post">
+        <h2>Post Title 3</h2>
+        <p>Post Content 3</p>
+      </div>
+      <div class="post">
+        <h2>Post Title 4</h2>
+        <p>Post Content 4</p>
+      </div>
+    </div>
+  </body>
+</html>
