@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+
+      .header2 {
+        padding: 20px;
+        text-decoration: none;
+      }
+
+      .main {
+        display: flex;
+        /* justify-content: left; */
+        flex-direction: row;
+      }
+
+      .main1 {
+        padding-left: 20px;
+        align-self: flex-start;
+        /* background-color: aqua; */
+        margin-top: 40px;
+        margin-right: 20px;
+      }
+
+      .main2 {
+        /* background-color: blue; */
+        margin-left: 30px;
+        margin-right: 20px;
+        margin-top: 20px;
+      }
+
+      .main3 {
+        background-color: rgb(248, 249, 250);
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+        margin-top: 80px;
+      }
+      .main1-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 150px;
+      }
+      .logosize {
+        width: 200px;
+      }
+
+      .tim {
+        width: 270px;
+        height: 180px;
+      }
+
+      .name {
+        border-bottom: 1px solid black;
+      }
+
+      .title {
+        text-align: center;
+        background-color: lightgrey;
+      }
+
+      h2 {
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+
+      h4 {
+        margin-top: 0px;
+      }
+
+      h1 {
+        /* display: inline-block; */
+        margin-top: 0px;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .card {
+        display: flex;
+        text-align: left;
+        line-height: 30px;
+      }
+
+      .card-left {
+        margin-left: 20px;
+      }
+
+      .card-right {
+        margin-left: 20px;
+      }
+
+      .blue {
+        color: blue;
+      }
+
+      a:visited {
+        color: blue;
+      }
+
+      a:hover {
+        color: blue;
+      }
+
+      .footer {
+        border-top: 1px solid black;
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a
+        href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EB%8C%80%EB%AC%B8"
+        ><img class="logosize" src="02.png" alt="위키백과"
+      /></a>
+      <div class="header2">
+        <a
+          class="blue"
+          href="https://ko.wikipedia.org/w/index.php?title=%ED%8A%B9%EC%88%98:%EA%B3%84%EC%A0%95%EB%A7%8C%EB%93%A4%EA%B8%B0&returnto=%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC%3A%EB%8C%80%EB%AC%B8&returntoquery=action%3Dedit"
+          >계정만들기</a
+        >
+        <a
+          class="blue"
+          href="https://ko.wikipedia.org/w/index.php?title=%ED%8A%B9%EC%88%98:%EB%A1%9C%EA%B7%B8%EC%9D%B8&returnto=%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC%3A%EB%8C%80%EB%AC%B8&returntoquery=action%3Dedit"
+          >로그인</a
+        >
+      </div>
+    </div>
+    <div class="main">
+      <div class="main1">
+        <p>목차</p>
+        <a class="blue" href="#">처음위치</a>
+        <p class="blue">생애</p>
+        <p class="blue">약력</p>
+        <p class="blue">저서</p>
+      </div>
+
+      <div class="main1-1">
+        <div class="main2">
+          <h1 class="name">팀 버너스리</h1>
+          <p>위키백과, 우리 모두의 백과사전</p>
+          <p>팀 버너스리경은 영국의 컴퓨터 과학자 이다.</p>
+          <h1 class="name">생애</h1>
+          <p>
+            버너스리는 잉글랜드 런던에서 태어났으며,[1] 부모는 메리 리 우즈(Mary
+            Lee Woods)와 콘웨이 버너스리(Conway Berners-Lee)이다.
+          </p>
+          <h1 class="name">약력</h1>
+          <ul>
+            <li>CERN에서 WWW 개념의 기초가 된 인콰이어(Enquire)를 개발.</li>
+            <li>1989년 글로벌 하이퍼텍스트 프로젝트를 제안.</li>
+          </ul>
+
+          <h1 class="name">저서</h1>
+          <ul>
+            <li>
+              당신이 꿈꾸는 인터넷 세상 월드와이드웹(Weaving the web), ISBN
+              89-475-2329-1<br />
+            </li>
+            <li>정보 관리: 한가지 제안(Tim Berners-Lee, CERN)</li>
+          </ul>
+        </div>
+        <div class="main3">
+          <div class="title">
+            <h2>팀 버너스리</h2>
+            <h4>Timothy John "Tim" Berners-Lee</h4>
+          </div>
+          <img class="tim" src="01.jpg" alt="팀 버너스리" />
+          <div class="card">
+            <div class="card-left">
+              <p>
+                <b>출생</b><br />
+                <b>분야</b><br />
+                <b>소속</b><br />
+                <b>출신대학</b><br />
+                <b>수상</b><br />
+                <b>배우자</b><br />
+                <b>자녀</b>
+              </p>
+            </div>
+            <div class="card-right">
+              <p>
+                1955년 6월 8일(67세)<br />
+                컴퓨터 과학<br />
+                W3C<br />
+                옥스퍼드 대학교 물리학 학사<br />
+                튜링상(2016)<br />
+                낸시 칼슨(1990 ~ 2011)<br />
+                1남 1녀
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>💖 ✨2023년 3월 3일 왕나원과 한선진이 만들었어요 🥹 ☔️</p>
+    </div>
+  </body>
+</html>

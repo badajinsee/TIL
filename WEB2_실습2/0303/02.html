@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spotify</title>
+    <style>
+        * {
+            background-color: black;
+        }
+        
+      .spotify {
+        display: flex;
+        flex-direction: row;
+        
+        
+      }
+      .sidebar {
+        width: 300px;
+        flex-direction: column;
+        border-right: 1px solid white;
+      }
+      .logoimg {
+        width: 300px;
+      }
+
+      .sidebar2 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .sidebar3 {
+        line-height: 30px;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: gray;
+      }
+
+      a:hover {
+        color: white;
+      }
+      
+      .nav {
+        display: flex;
+        width: 700px;
+        height: 100px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-left: auto;
+        padding-top: 70px;
+        padding-right: 70px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .naco {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+      }
+      
+      .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-top: 1px solid white;
+        padding-top: 80px;
+        margin-top: 10px;
+      }
+
+      .login1 {
+        width: 180px;
+        height: 30px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding: 3px;
+        font-size: 20px;
+        text-decoration: none;
+        color: gray;
+      }
+      
+      .login2 {
+        margin-left: 10px;
+        width: 180px;
+        height: 30px;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid gray;
+        background-color: white !important;
+        border-radius: 30px;
+        padding: 3px;
+        cursor: pointer;
+        text-decoration: none;
+        color:black;
+      }
+
+      .iu_img {
+         width: 300px;
+        margin-right: 20px; 
+      } 
+      p {
+        color: white;
+      }
+
+      .footer {
+        border-top: 1px solid white;
+        margin-top: 130px;
+        text-align: center;
+        margin-top: 100px;
+        height: 100%
+      }
+    </style>
+  </head>
+  <body>
+    <div class="spotify">
+        <div class="sidebar">
+            <a href="https://open.spotify.com/"><img class="logoimg" src="03.png" alt="logo" /></a>
+            <div class ="sidebar2">
+                  <b><a class="sidebar3 " href="https://open.spotify.com/">홈</a> </b>
+                  <b><a class="sidebar3 " href="https://open.spotify.com/search">검색하기</a></b>
+                  <b><a class="sidebar3 " href="https://open.spotify.com/search">내 라이브러리</a></b>
+                  </br>
+                  <b><a class="sidebar3 " href="https://open.spotify.com/search">플레이리스트 만들기</a></b>
+                  <b><a class="sidebar3 " href="https://open.spotify.com/search">좋아요 표시한 곡</a></b>
+            </div>
+          </div>
+        <div class="naco">
+            <div class="nav">
+                  <button class="login1" onclick="location.href='https://www.spotify.com/kr-ko/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F';">가입하기</button>
+                
+                    <button class="login2" onclick="location.href='https://accounts.spotify.com/ko/login?continue=https%3A%2F%2Fopen.spotify.com%2F';">로그인</button >
+                  <!-- <a href="https://accounts.spotify.com/ko/login?continue=https%3A%2F%2Fopen.spotify.com%2F">로그인</a> -->
+                
+            </div> 
+            <div class="content">
+                <div><img class="iu_img" src="IU_Palette.png" alt="iu"></div>
+                <div><img class="iu_img" src="IU_lovepoem.png" alt="iu"></div>
+                <div><img class ="iu_img" src="IU_에잇.png" alt="iu"></div>
+                <div><img class="iu_img" src="IU_LILAC.png" alt="iu"></div>
+            </div>
+
+            <div class="footer">
+                <p>💖 ✨2023년 3월 3일 왕나원과 한선진이 만들었어요 🥹 ☔️</p>
+            </div>
+           
+        </div>
+       
+        
+    </div>
+  </body>
+</html>
