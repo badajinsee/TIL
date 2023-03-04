@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: black;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .logo {
+        width: 45%;
+      }
+
+      .nav_2 {
+        margin-left: auto;
+        margin-right: 10px;
+        border: 0px;
+        border-radius: 2em;
+        width: 130px;
+        height: 50px;
+        color: gray;
+        background-color: black;
+        font-size: 15px;
+      }
+
+      .nav_3 {
+        background-color: white;
+        border: 0px;
+        border-radius: 2em;
+        width: 120px;
+        height: 50px;
+        font-size: 15px;
+        margin-right: 10px;
+      }
+
+      .nav_2:hover {
+        color: white;
+      }
+
+      .sidebar {
+        color: lightgrey;
+        margin-left: 20px;
+        font-size: 15px;
+        text-decoration: none;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .main {
+        color: gray;
+        background-color: rgb(31, 31, 31);
+        height: 700px;
+        flex-grow: 15;
+      }
+
+      .sidebar {
+        flex-grow: 1;
+        /* background-color: brown; */
+        line-height: 30px;
+        margin-top: 20px;
+      }
+
+      a:visited {
+        color: white;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .font_margin {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      a:hover {
+        color: gray;
+      }
+
+      .footer {
+        margin-top: 20px;
+        color: white;
+        background: linear-gradient(blue, 10%, pink) !important;
+        text-align: left;
+        padding: 10px;
+      }
+
+      .font_back {
+        background-color: transparent;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="https://open.spotify.com/"
+        ><img class="logo" src="03.png" alt="spotify"
+      /></a>
+      <button
+        class="nav_2"
+        onclick="location.href='https://www.spotify.com/kr-ko/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F'"
+      >
+        <b>가입하기</b>
+      </button>
+      <button
+        class="nav_3"
+        onclick="location.href='https://www.spotify.com/kr-ko/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F'"
+      >
+        로그인하기
+      </button>
+    </nav>
+    <div class="content">
+      <div class="sidebar">
+        <a href="https://open.spotify.com/">홈</a>
+        <br />
+        <a href="https://open.spotify.com/">검색하기</a>
+        <br />
+        <a href="https://open.spotify.com/">내 라이브러리</a>
+        <p class="font_margin">플레이리스트 만들기</p>
+        <p class="font_margin">좋아요 표시한 곡</p>
+      </div>
+      <div class="main"></div>
+    </div>
+    <div class="footer">
+      <p class="font_back">
+        좋아하는 국내 음악과 세계 최고의 플레이스트를 들어보세요.
+      </p>
+    </div>
+  </body>
+</html>
