@@ -13,6 +13,7 @@
       nav {
         display: flex;
         justify-content: space-between;
+        margin-top: 5px;
       }
 
       .logo {
@@ -55,6 +56,8 @@
       .content {
         display: flex;
         flex-direction: row;
+        height: 100%;
+        margin-bottom: 42px;
       }
 
       .main {
@@ -88,16 +91,24 @@
         color: gray;
       }
 
-      .footer {
-        margin-top: 20px;
+      footer {
         color: white;
         background: linear-gradient(blue, 10%, pink) !important;
         text-align: left;
+
+        margin-top: auto;
         padding: 10px;
+        margin-bottom: 0px;
+        /* position: relative; */
       }
 
       .font_back {
         background-color: transparent;
+      }
+
+      body {
+        height: 800px;
+        margin: 0px;
       }
     </style>
   </head>
@@ -120,6 +131,7 @@
         로그인하기
       </button>
     </nav>
+
     <div class="content">
       <div class="sidebar">
         <a href="https://open.spotify.com/">홈</a>
@@ -132,10 +144,10 @@
       </div>
       <div class="main"></div>
     </div>
-    <div class="footer">
+    <footer>
       <p class="font_back">
         좋아하는 국내 음악과 세계 최고의 플레이스트를 들어보세요.
       </p>
-    </div>
+    </footer>
   </body>
 </html>
