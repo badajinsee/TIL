@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>에어비앤비 2번</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      a {
+        text-decoration: none;
+      }
+
+      .image {
+        width: 170px;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/1a59c443b4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 네비게이션바 -->
+    <div class="container">
+      <nav class="navbar sticky-top bg-white">
+        <div class="container-fluid d-flex column">
+          <img src="img/airbnb.png" class="image" alt="..." />
+          <div class="d-flex d-row">
+            <p class="p-2">회원가입</p>
+            <p class="p-2">로그인</p>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--한국의 휴가 임대시설-->
+    <div class="container">
+      <div class="col-12 col-md-4">
+        <div class="card shadow p-3 mb-5 rounded border-0">
+          <div class="card-body">
+            <h1 class="fw-bold">한국의 휴가 임대 시설</h1>
+            <p>에어비앤비에서 독특한 숙소를 예약하세요.</p>
+
+            <!-- 위치:한국 -->
+            <div class="row g-2">
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control" value="한국" />
+                  <label for="floatingInputGrid">위치</label>
+                </div>
+              </div>
+
+              <!-- 체크인/체크아웃 -->
+              <div class="input-group">
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    aria-label="First name"
+                    class="form-control"
+                    value="날짜 입력"
+                  />
+                  <label for="floatingInputGrid">체크인</label>
+                </div>
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    aria-label="Last name"
+                    class="form-control"
+                    value="날짜 입력"
+                  />
+                  <label for="floatingInputGrid">체크아웃</label>
+                </div>
+              </div>
+
+              <!-- 성인/어린이 -->
+              <div class="input-group mb-3">
+                <div class="form-floating">
+                  <select class="form-select" id="inputGroupSelect02">
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <label for="floatingSelect">성인</label>
+                </div>
+
+                <div class="form-floating">
+                  <select class="form-select" id="inputGroupSelect02">
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <label for="floatingSelect">어린이</label>
+                </div>
+              </div>
+
+              <!-- 검색버튼 -->
+              <div class="d-grid gap-2 col-12 mx-auto">
+                <button
+                  class="btn text-white"
+                  type="button"
+                  style="background-color: rgb(209, 54, 92)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                    style="background-color: rgb(209, 54, 92)"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                    />
+                  </svg>
+                  검색
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 최고 평점 숙소! 카드형식 -->
+      <div class="container">
+        <h2>최고 평점을 받은 한국의 휴가 숙소</h2>
+        <p class="text-light-emphasis">
+          위치, 청결도 등에서 게스트의 높은 평가를 받은 숙소입니다.
+        </p>
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card border-0 position-relative">
+              <img
+                src="img/02.webp"
+                class="card-img-top rounded"
+                style="height: 382px"
+                alt="..."
+              />
+
+              <div class="card-body p-0 pt-2">
+                <h6 class="d-flex justify-content-between mb-0">
+                  Sindun-myeon, icheon-si의 전원주택
+                  <p>★4.81(137)</p>
+                </h6>
+                <p class="card-text mb-0">서울 근교 이천시의 감성 힐링 숙소</p>
+                <p class="card-text">
+                  이천 도자 예술촌에 위치한 통기타 모양의 전원 주택입니다.
+                  자연과 매우 잘 어우러진 이천 도자 예술 마을에서 독특한
+                  외관으로 유명한 세라 기타 문화관의 3층 테라스가 넓은 독채
+                  집입니다. 아늑하고 따뜻한 방에서 여유로운 감성 힐링 휴가를
+                  즐겨보세요.높은 건물이 없는 마을의 3층...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card border-0 position-relative">
+              <img
+                src="img/04.webp"
+                class="card-img-top rounded"
+                style="height: 382px"
+                alt="..."
+              />
+              <div
+                class="position-absolute top-0 start-0 p-1 bg-light m-3 rounded"
+              >
+                <a
+                  class="link-dark"
+                  href="https://www.airbnb.co.kr/rooms/658525016358955101?source_impression_id=p3_1678422919_twieUcnXWCZ17dCI"
+                  >슈퍼호스트</a
+                >
+              </div>
+              <div class="card-body p-0 pt-2">
+                <h6 class="d-flex justify-content-between mb-0">
+                  Yeongwol-gun의 통나무집
+                  <p>★4.96(612)</p>
+                </h6>
+                <p class="card-text mb-0">강원도 영월에 위치한 통나무집 A</p>
+                <p class="card-text">
+                  저희 집은 강원도 영월 태화산 근처에 위치해 있는 공간으로,
+                  저희가 거주하고 있는 공간 옆에 있는 이쁜 별채입니다. 부부와
+                  가족들이 오시면 좋은 추억을 남길 수 있는 공간이에요. 가족은
+                  4인까지 가능하며 성인3인일경우 동성만 가능하십니다. 복층형으로
+                  되어 있으며, 가을부...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card border-0">
+              <img
+                src="img/10.webp"
+                class="card-img-top rounded"
+                style="height: 382px"
+                alt="..."
+              />
+              <div class="card-body p-0 pt-2">
+                <h6 class="d-flex justify-content-between mb-0">
+                  제주시의 게스트 스위트
+                  <p>★4.53(139)</p>
+                </h6>
+                <p class="card-text mb-0">
+                  애월노천탕 일본풍 료칸 돌집돌담 소길리 풀빌라
+                </p>
+                <p class="card-text">
+                  일본풍료칸과 제주전통돌집, 돌담의 콜라보로 건축하였습니다.
+                  공항과 가깝고, 바다는 차로 10분거리, 노천탕이 있습니다~ 핫한
+                  애월 소길리에 위치해있습니다~
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 한국의 휴가용 임대 숙소의 인기 편의시설 -->
+      <div class="container mt-5 mb-5">
+        <h2>한국의 휴가용 임대 숙소의 인기 편의시설</h2>
+        <div class="row border justify-content-around">
+          <!-- 주방 -->
+
+          <div class="border border-0 shadow col-4 col-md p-4 rounded">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 576 512"
+            >
+              <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M80 144C80 108.7 108.7 80 144 80C179.3 80 208 108.7 208 144C208 179.3 179.3 208 144 208C108.7 208 80 179.3 80 144zM284.4 176C269.9 240.1 212.5 288 144 288C64.47 288 0 223.5 0 144C0 64.47 64.47 0 144 0C212.5 0 269.9 47.87 284.4 112H356.2C365 102.2 377.8 96 392 96H496C522.5 96 544 117.5 544 144C544 170.5 522.5 192 496 192H392C377.8 192 365 185.8 356.2 176H284.4zM144 48C90.98 48 48 90.98 48 144C48 197 90.98 240 144 240C197 240 240 197 240 144C240 90.98 197 48 144 48zM424 264V272H520C533.3 272 544 282.7 544 296C544 309.3 533.3 320 520 320H280C266.7 320 256 309.3 256 296C256 282.7 266.7 272 280 272H376V264C376 250.7 386.7 240 400 240C413.3 240 424 250.7 424 264zM288 464V352H512V464C512 490.5 490.5 512 464 512H336C309.5 512 288 490.5 288 464zM176 320C202.5 320 224 341.5 224 368C224 394.5 202.5 416 176 416H160C160 433.7 145.7 448 128 448H64C46.33 448 32 433.7 32 416V336C32 327.2 39.16 320 48 320H176zM192 368C192 359.2 184.8 352 176 352H160V384H176C184.8 384 192 376.8 192 368zM200 464C213.3 464 224 474.7 224 488C224 501.3 213.3 512 200 512H24C10.75 512 0 501.3 0 488C0 474.7 10.75 464 24 464H200z"
+              />
+            </svg>
+            <p class="m-0">주방</p>
+          </div>
+
+          <!-- 무선인터넷 -->
+
+          <div class="border border-0 shadow col-4 col-md p-4 rounded">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-wifi"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"
+              />
+              <path
+                d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"
+              />
+            </svg>
+            <p class="m-0">무선인터넷</p>
+          </div>
+
+          <!-- 수영장 -->
+
+          <div class="border border-0 shadow col-4 col-md p-4 rounded">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              class="icon icon-tabler icon-tabler-pool"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M2 20a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1"
+              />
+              <path
+                d="M2 16a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1"
+              />
+              <path d="M15 12v-7.5a1.5 1.5 0 0 1 3 0" />
+              <path d="M9 12v-7.5a1.5 1.5 0 0 0 -3 0" />
+              <line x1="15" y1="5" x2="9" y2="5" />
+              <line x1="9" y1="10" x2="15" y2="10" />
+            </svg>
+            <p class="m-0">수영장</p>
+          </div>
+
+          <!-- 건물 내 무료 주차 -->
+
+          <div class="border border-0 shadow col-6 col-md p-4 rounded">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-p-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM5.5 4.002h2.962C10.045 4.002 11 5.104 11 6.586c0 1.494-.967 2.578-2.55 2.578H6.784V12H5.5V4.002Zm2.77 4.072c.893 0 1.419-.545 1.419-1.488s-.526-1.482-1.42-1.482H6.778v2.97H8.27Z"
+              />
+            </svg>
+            <p class="m-0">건물 내 무료 주차</p>
+          </div>
+
+          <!-- 에어컨 -->
+          <div class="border border-0 shadow col-6 col-md p-4 rounded">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-snow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16a.5.5 0 0 1-.5-.5v-1.293l-.646.647a.5.5 0 0 1-.707-.708L7.5 12.793V8.866l-3.4 1.963-.496 1.85a.5.5 0 1 1-.966-.26l.237-.882-1.12.646a.5.5 0 0 1-.5-.866l1.12-.646-.884-.237a.5.5 0 1 1 .26-.966l1.848.495L7 8 3.6 6.037l-1.85.495a.5.5 0 0 1-.258-.966l.883-.237-1.12-.646a.5.5 0 1 1 .5-.866l1.12.646-.237-.883a.5.5 0 1 1 .966-.258l.495 1.849L7.5 7.134V3.207L6.147 1.854a.5.5 0 1 1 .707-.708l.646.647V.5a.5.5 0 1 1 1 0v1.293l.647-.647a.5.5 0 1 1 .707.708L8.5 3.207v3.927l3.4-1.963.496-1.85a.5.5 0 1 1 .966.26l-.236.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.883.237a.5.5 0 1 1-.26.966l-1.848-.495L9 8l3.4 1.963 1.849-.495a.5.5 0 0 1 .259.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.236.883a.5.5 0 1 1-.966.258l-.495-1.849-3.4-1.963v3.927l1.353 1.353a.5.5 0 0 1-.707.708l-.647-.647V15.5a.5.5 0 0 1-.5.5z"
+              />
+            </svg>
+            <p class="m-0">에어컨</p>
+          </div>
+        </div>
+      </div>
+      message.txt
+
+      <!-- 한국의 다른 근사한 휴가 숙소 -->
+      <div class="container mt-5 mb-5">
+        <h2 class="mb-2">한국의 다른 근사한 휴가 숙소</h2>
+        <div class="row">
+          <!-- 1 -->
+          <div class="col-12 col-md-3 mb-3">
+            <div class="card border-0 position-relative">
+              <img
+                src="img/01.webp"
+                class="card-img-top rounded img-fluid"
+                style="height: 250px"
+                alt="..."
+              />
+              <div
+                class="position-absolute top-0 start-0 p-1 bg-light m-3 rounded"
+              >
+                <a
+                  class="link-dark"
+                  href="https://www.airbnb.co.kr/rooms/658525016358955101?source_impression_id=p3_1678422919_twieUcnXWCZ17dCI"
+                  >슈퍼호스트</a
+                >
+              </div>
+              <div class="card-body p-0 pt-2" style="height: 30px">
+                <h6 class="d-flex justify-content-between mb-0">
+                  Samgye-myeon,-...
+                  <p>★4.91(612)</p>
+                </h6>
+                <p class="card-text text-truncate mb-0">
+                  한옥사랑채 - 편백 숲, 전통 구들방 2, ...
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="col-12 col-md-3 mb-3">
+            <div class="card border-0 position-relative">
+              <img
+                src="img/03.webp"
+                class="card-img-top rounded img-fluid"
+                style="height: 250px"
+                alt="..."
+              />
+              <div
+                class="position-absolute top-0 start-0 p-1 bg-light m-3 rounded"
+              >
+                <a
+                  class="link-dark"
+                  href="https://www.airbnb.co.kr/rooms/658525016358955101?source_impression_id=p3_1678422919_twieUcnXWCZ17dCI"
+                  >슈퍼호스트</a
+                >
+              </div>
+              <div class="card-body p-0 pt-2">
+                <h6 class="d-flex justify-content-between mb-0">
+                  수영구의 레지던스
+                  <p>★5(612)</p>
+                </h6>
+                <p class="card-text text-truncate mb-0">
+                  무제_제목없을용기_고요평온힐링_...
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="col-12 col-md-3 mb-3">
+            <div class="card border-0 position-relative">
+              <img
+                src="img/05.webp"
+                class="card-img-top rounded img-fluid"
+                style="height: 250px"
+                alt="..."
+              />
+              <div
+                class="position-absolute top-0 start-0 p-1 bg-light m-3 rounded"
+              >
+                <a
+                  class="link-dark"
+                  href="https://www.airbnb.co.kr/rooms/658525016358955101?source_impression_id=p3_1678422919_twieUcnXWCZ17dCI"
+                  >슈퍼호스트</a
+                >
+              </div>
+              <div class="card-body p-0 pt-2">
+                <h6 class="d-flex justify-content-between mb-0">
+                  Pungsan-eup, Andong의 집
+                  <p>★5(9)</p>
+                </h6>
+                <p class="card-text text-truncate mb-0">
+                  스테이 루:가, 자쿠지와 홈카페가 있는...
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="col-12 col-md-3 mb-3">
+            <div class="card border-0 position-relative">
+              <img
+                src="img/06.webp"
+                class="card-img-top rounded img-fluid"
+                style="height: 250px"
+                alt="..."
+              />
+              <div
+                class="position-absolute top-0 start-0 p-1 bg-light m-3 rounded"
+              >
+                <a
+                  class="link-dark"
+                  href="https://www.airbnb.co.kr/rooms/658525016358955101?source_impression_id=p3_1678422919_twieUcnXWCZ17dCI"
+                  >슈퍼호스트</a
+                >
+              </div>
+              <div class="card-body p-0 pt-2">
+                <h6 class="d-flex justify-content-between mb-0 text-truncate">
+                  Mundeok-myeon, Boseong-
+                  <p>★4.82(210)</p>
+                </h6>
+                <p class="card-text text-truncate mb-0">
+                  저희 집은 강원도 영월 태화산 근처에 위치해 있는 공간으로,
+                  저희가 거주하고 있는 공간 옆에 있는 이쁜 별채입니다. 부부와
+                  가족들이 오시면 좋은 추억을 남길 수 있는 공간이에요. 가족은
+                  4인까지 가능하며 성인3인일경우 동성만 가능하십니다. 복층형으로
+                  되어 있으며, 가을부...
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 5-->
+          <div class="col-12 col-md-3 mb-3">
+            <div class="card border-0 position-relative">
+              <img
+                src="img/07.webp"
+                class="card-img-top rounded"
+                style="height: 250px"
+                alt="..."
+              />
+              <div
+                class="position-absolute top-0 start-0 p-1 bg-light m-3 rounded"
+              >
+                <a
+                  class="link-dark"
+                  href="https://www.airbnb.co.kr/rooms/658525016358955101?source_impression_id=p3_1678422919_twieUcnXWCZ17dCI"
+                  >슈퍼호스트</a
+                >
+              </div>
+              <div class="card-body p-0 pt-2">
+                <h6 class="d-flex justify-content-between mb-0">
+                  Gyeongju-si의 게스트용 별채
+                  <p>★4.96(113)</p>
+                </h6>
+                <p class="card-text text-truncate mb-0">
+                  [Lazy House] 우드감성의 독채 감성 숙소
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="col-12 col-md-3 mb-3">
+            <div class="card border-0 position-relative">
+              <img
+                src="img/08.webp"
+                class="card-img-top rounded"
+                style="height: 250px"
+                alt="..."
+              />
+              <div
+                class="position-absolute top-0 start-0 p-1 bg-light m-3 rounded"
+              >
+                <a
+                  class="link-dark"
+                  href="https://www.airbnb.co.kr/rooms/658525016358955101?source_impression_id=p3_1678422919_twieUcnXWCZ17dCI"
+                  >슈퍼호스트</a
+                >
+              </div>
+              <div class="card-body p-0 pt-2">
+                <h6 class="d-flex justify-content-between mb-0">
+                  Pungnamdong3(sam)-ga
+                  <p>★4.76(344)</p>
+                </h6>
+                <p class="card-text mb-0">전주한옥스테이 "yeoga...여가"</p>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="col-12 col-md-3 mb-3">
+            <div class="card border-0 position-relative">
+              <img
+                src="img/09.webp"
+                class="card-img-top rounded"
+                style="height: 250px"
+                alt="..."
+              />
+              <div
+                class="position-absolute top-0 start-0 p-1 bg-light m-3 rounded"
+              >
+                <a
+                  class="link-dark"
+                  href="https://www.airbnb.co.kr/rooms/658525016358955101?source_impression_id=p3_1678422919_twieUcnXWCZ17dCI"
+                  >슈퍼호스트</a
+                >
+              </div>
+              <div class="card-body p-0 pt-2">
+                <h6 class="d-flex justify-content-between mb-0 text-truncate">
+                  Gahoe-dong, Jongno-gu
+                  <p>★4.93(80)</p>
+                </h6>
+                <p class="card-text mb-0 text-truncate">
+                  [aboheon / 아보헌] 안국역 도보 10분 독채 한옥 스테이
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="col-12 col-md-3 mb-3">
+            <div class="card border-0 position-relative">
+              <img
+                src="img/11.webp"
+                class="card-img-top rounded"
+                style="height: 250px"
+                alt="..."
+              />
+              <div
+                class="position-absolute top-0 start-0 p-1 bg-light m-3 rounded"
+              >
+                <a
+                  class="link-dark"
+                  href="https://www.airbnb.co.kr/rooms/658525016358955101?source_impression_id=p3_1678422919_twieUcnXWCZ17dCI"
+                  >슈퍼호스트</a
+                >
+              </div>
+              <div class="card-body p-0 pt-2">
+                <h6 class="d-flex justify-content-between mb-0">
+                  Jeonju-si의 초소형 주택
+                  <p>★3.96(612)</p>
+                </h6>
+                <p class="card-text mb-0 text-truncate">행복공간休</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    끝!
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
