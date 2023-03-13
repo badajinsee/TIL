@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>spotify_clone</title>
     <style>
       * {
         background-color: black;
@@ -61,7 +61,6 @@
       }
 
       .main {
-        color: gray;
         background-color: rgb(31, 31, 31);
         height: 700px;
         flex-grow: 15;
@@ -132,14 +131,50 @@
       }
 
       .madisonbeer {
-        border: 1px solid gray;
-        border-radius: 3%;
-        width: 200px;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+        background-color: rgb(31, 31, 31);
       }
 
       .madison {
         width: 170px;
+      }
+
+      .scripter {
+        text-align: left;
+        background-color: rgb(24, 24, 24);
+      }
+
+      .card_1 {
+        background-color: rgb(24, 24, 24);
+        /* border: 1px solid gray; */
+        border-radius: 3%;
+        width: 200px;
+        padding: 10px;
+        color: white;
+        text-align: center;
+      }
+      .card_2 {
+        margin-left: 30px;
+        background-color: rgb(24, 24, 24);
+        /* border: 1px solid gray; */
+        border-radius: 3%;
+        width: 200px;
+        padding: 10px;
+        color: white;
+        text-align: center;
+      }
+
+      .card_3 {
+        margin-left: 30px;
+        background-color: rgb(24, 24, 24);
+        /* border: 1px solid gray; */
+        border-radius: 3%;
+        width: 200px;
+        padding: 10px;
+        color: white;
+        text-align: center;
       }
     </style>
   </head>
@@ -147,7 +182,7 @@
   <body>
     <nav>
       <a href="https://open.spotify.com/"
-        ><img class="logo" src="03.png" alt="spotify"
+        ><img class="logo" src="img_sporify/03.png" alt="spotify"
       /></a>
       <button
         class="nav_2"
@@ -174,10 +209,79 @@
         <p class="font_margin">좋아요 표시한 곡</p>
       </div>
       <div class="main">
+        <h1
+          style="
+            color: white;
+            background-color: rgb(31, 31, 31);
+            margin-left: 30px;
+          "
+        >
+          앨범
+        </h1>
         <div class="madisonbeer">
-          <img class="madison" src="madisonbeer_01.jpeg" alt="madison" />
-          <p>POP/STARS</p>
-          <p>2018.K/DA,MadisonBeer,(여자)아이들</p>
+          <div class="card_1">
+            <img
+              class="madison"
+              src="img_sporify/madisonbeer_01.jpeg"
+              alt="madison"
+            />
+            <div class="scripter">
+              <p style="background-color: rgb(24, 24, 24); margin-bottom: 0px">
+                POP/STARS
+              </p>
+              <p
+                style="
+                  color: rgb(149, 149, 149);
+                  background-color: rgb(24, 24, 24);
+                  margin-top: 10px;
+                "
+              >
+                2018.K/DA,MadisonBeer,(여자)아이들
+              </p>
+            </div>
+          </div>
+          <div class="card_2">
+            <img
+              class="madison"
+              src="img_sporify/madisonbeer_03.jpeg.crdownload"
+              alt="madison"
+            />
+            <div class="scripter">
+              <p style="background-color: rgb(24, 24, 24); margin-bottom: 0px">
+                MORE
+              </p>
+              <p
+                style="
+                  color: rgb(149, 149, 149);
+                  background-color: rgb(24, 24, 24);
+                  margin-top: 10px;
+                "
+              >
+                2020.K/DA,MadisonBeer,(여자)아이들
+              </p>
+            </div>
+          </div>
+          <div class="card_2">
+            <img
+              class="madison"
+              src="img_sporify/madisonbeer_02.jpeg"
+              alt="madison"
+            />
+            <div class="scripter">
+              <p style="background-color: rgb(24, 24, 24); margin-bottom: 10px">
+                As She Pleases
+              </p>
+              <p
+                style="
+                  color: rgb(149, 149, 149);
+                  background-color: rgb(24, 24, 24);
+                  margin-top: 0px;
+                "
+              >
+                2018. MadisonBeer
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
