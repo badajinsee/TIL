@@ -2,6 +2,8 @@
 
 [🌊 블로그](https://jins-coadinglearn.tistory.com/)
 
+[🫧 VELOG 블로그](https://velog.io/@badajinsee)
+
 ---
 
 🪴[마크다운정리](https://github.com/badajinsee/TIL/blob/main/coading%20learning/markdown.md)
@@ -71,3 +73,13 @@
 [CSS_2 / boxmodel](https://github.com/badajinsee/TIL/blob/main/coading%20learning/WEB_/02.md)
 
 [CSS_3 / Layout/Position](https://github.com/badajinsee/TIL/blob/main/coading%20learning/WEB_/03.md)
+
+[CSS_4 /Floats/Flexbox](https://github.com/badajinsee/TIL/blob/main/coading%20learning/WEB_/04.md)
+
+---
+
+👒
+
+[javascript_Dom](https://github.com/badajinsee/TIL/blob/main/coading%20learning/WEB_/05.md)
+
+[javascript_1](https://github.com/badajinsee/TIL/blob/main/coading%20learning/WEB_/06.md)
