@@ -7,12 +7,20 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="container">
-      <h1 id="heading">에디오피아 게뎁</h1>
-    </div>
-
     <script>
-      document.getElementById("heading");
+      const greeting = function (name) {
+        return `hello, ${name}`;
+      };
+
+      const arrow1 = (name) => {
+        return `hello, ${name}`;
+      };
+
+      console.log(arrow1("harry"));
+
+      const arrow2 = (name) => `hello, ${name}`;
+
+      console.log(arrow2("harry"));
     </script>
   </body>
 </html>
