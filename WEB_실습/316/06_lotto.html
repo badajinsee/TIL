@@ -27,19 +27,19 @@
 
         // 2.2 45개의 요소가 있는 배열에서 6개 번호 추출
         const sixnumbers = _.sampleSize(numbers, 6);
-        // console.log(sixnumbers);
+        console.log(sixnumbers);
 
         const ulTag = document.createElement("ul");
 
         // 2.3 추출한 번호를 반복하면서 li 요소를 생성
-        sixnumbers.forEach((number) => {
-          const litag = document.createElement("li");
-          litag.textContent = number;
-          //   console.log(litag);
-          ulTag.appendChild(litag);
-        });
-        // console.log(ulTag);
-        divTag.appendChild(ulTag);
+        // sixnumbers.forEach((number) => {
+        //   const litag = document.createElement("li");
+        //   litag.textContent = number;
+        //   // console.log(litag);
+        //   ulTag.appendChild(litag);
+        // });
+        // // console.log(ulTag);
+        // divTag.appendChild(ulTag);
       });
     </script>
   </body>
