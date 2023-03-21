@@ -30,4 +30,4 @@
 | [javascript_Dom](https://github.com/badajinsee/TIL/blob/main/coading%20learning/WEB_/05.md)                                                                                | DOM                                                 |
 | [javascript_1](https://github.com/badajinsee/TIL/blob/main/coading%20learning/WEB_/06.md)                                                                                  | 자바스크립트\_변수, 조건문, 반복문                  |
 | [Django\_가상환경설정](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Django/start.md)                                                                     | 가상환경 설정하기                                   |
-| [Django_app]                                                                                                                                                               | 앱생성하기                                          |
+| [Django_app](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Django/app.md)                                                                                 | 앱생성하기                                          |
