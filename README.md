@@ -31,3 +31,5 @@
 | [javascript_1](https://github.com/badajinsee/TIL/blob/main/coading%20learning/WEB_/06.md)                                                                                  | 자바스크립트\_변수, 조건문, 반복문                  |
 | [Django\_가상환경설정](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Django/start.md)                                                                     | 가상환경 설정하기                                   |
 | [Django_app](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Django/app.md)                                                                                 | 앱생성하기                                          |
+| [Django_Template](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Django/template.md)                                                                       | 템플릿,템플릿 상속 , 요청과 응답                    |
+| [Django_urls](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Django/urls.md)                                                                               | variable routing, urls 지정, url태그                |

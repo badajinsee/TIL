@@ -18,6 +18,7 @@ url 일부에 변수를 포함시키는 것을 나타낸다.
 주소 입력을 해주면
 
 ![](https://velog.velcdn.com/images/badajinsee/post/c8fe7bac-6b30-473c-82c5-d2a3eaca49a9/image.png)
+
 ![](https://velog.velcdn.com/images/badajinsee/post/c14756e6-e908-445f-8244-6b195ab713ba/image.png)
 
 이런 형식으로 나온당 ~!
