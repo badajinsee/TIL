@@ -40,3 +40,4 @@
 | [Django_app](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Django/app.md)                                                                                 | 앱생성하기                                          |
 | [Django_Template](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Django/template.md)                                                                       | 템플릿,템플릿 상속 , 요청과 응답                    |
 | [Django_urls](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Django/urls.md)                                                                               | variable routing, urls 지정, url태그                |
+| [Django_model](https://github.com/badajinsee/TIL/blob/main/coading%20learning/Django/model.md)                                                                             | models.py 적기, admin 계정 생성                     |
