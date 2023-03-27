@@ -1,0 +1,29 @@
+{% extends 'app/base.html' %}
+
+{% block style %}
+  <style>
+    p {
+      font-size: 3rem;
+      margin: 40px;
+    }
+  </style>
+{% endblock style %}
+
+{% block content %}
+  <p>
+    더하기:
+    {{ add }}</p>
+  <p>
+    빼기 :
+    {{ minus }}
+  </p>
+  <p>
+    곱하기:
+    {{ multiply }}
+  </p>
+  <p>
+    몫:
+    {{ division }}
+  </p>
+
+{% endblock content %}

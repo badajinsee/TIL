@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %}
+
+<form action="/lotto/" method="get">
+  <div class="d-flex m-4">
+    <input
+      class="form-control w-25 me-3"
+      type="number"
+      placeholder="로또 생성 수"
+      aria-label="default input example"
+      name="count"
+    />
+    <button type="submit" class="btn btn-outline-primary">생성</button>
+  </div>
+</form>
+
+{% endblock content %}

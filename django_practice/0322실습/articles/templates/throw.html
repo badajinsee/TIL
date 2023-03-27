@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <form action="/catch/" method="get">
+    <div class="d-flex m-4">
+      <input class="form-control w-25 me-3" type="text" placeholder="내용 입력" aria-label="default input example" name="message"/>
+      <button type="submit" class="btn btn-outline-primary">Throw</button>
+    </div>
+  </form>
+
+{% endblock content %}

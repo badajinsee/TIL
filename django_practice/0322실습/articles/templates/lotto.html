@@ -1,0 +1,14 @@
+{% extends 'articles/base.html' %} {% block style %}
+<style>
+  ul {
+    list-style: none;
+  }
+</style>
+{% endblock style %} {% block content %}
+<ul>
+  {% for lotto in lottos %}
+  <li>{{ lottos }}</li>
+  {% endfor %}
+  <a href="http://127.0.0.1:8000/lotto-create/">뒤로 가기</a>
+</ul>
+{% endblock content %}
