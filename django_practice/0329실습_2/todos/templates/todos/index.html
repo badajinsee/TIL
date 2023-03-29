@@ -1,0 +1,23 @@
+{% extends 'todos/base.html' %}
+
+{% block style %}
+  <style>
+    * {
+      margin: 3rem;
+    }
+  </style>
+{% endblock style %}
+
+{% block content %}
+
+  <h1>Index</h1>
+
+  <a href="{% url 'todos:new' %}">할 일 생성</a>
+  <br>
+
+  {% for todod in todo %}
+    <a href="{% url 'todos:detail' todod.pk %}">pk-{{todod.pk}}</a>
+    <br>
+  {% endfor %}
+
+{% endblock content %}

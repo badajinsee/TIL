@@ -1,0 +1,51 @@
+{% extends 'todos/base.html' %}
+
+{% block content %}
+  <form action="{% url 'todos:create' %}" method="GET">
+    {% comment %} <div>
+      <div>
+        <p>할 일 제목</p>
+        <input type="text" name="title">
+      </div>
+
+      <div>
+        <p>할 일 내용</p>
+        <textarea name="content" id="naeyoung" cols="30" rows="10"></textarea>
+      </div>
+
+      <div>
+        <p>우선순위</p>
+        <input type="number" name='priority'>
+      </div>
+
+      <div>
+        <p>마감기한</p>
+        <input type="date" name='deadline'>
+      </div>
+      <button type="submit" class="btn btn-outline-primary m-5 mt-3 mb-3">할 일 생성</button>
+    </div> {% endcomment %}
+
+      <div class="">
+        <div class="m-5 w-25 mt-3 mb-3">
+          <label for="formGroupExampleInput" class="form-label">할 일 제목</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" name='title'>
+        </div>
+        <div class="m-5 w-25  mt-3 mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">할 일 생성</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name='content'></textarea>
+        </div>
+        <div class="m-5 w-25 mt-3 mb-3">
+          <label for="formGroupExampleInput" class="form-label">우선순위</label>
+          <input type="number" class="form-control" id="formGroupExampleInput" name='priority'>
+        </div>
+  
+        <div class="m-5 w-25 mt-3 mb-3">
+          <label for="formGroupExampleInput" class="form-label">마감기한</label>
+          <input type="date" class="form-control" id="deadline" name='deadline'>
+        </div>
+        <button type="submit" class="btn btn-outline-primary m-5 mt-3 mb-3">할 일 생성</button>
+      </div>
+
+
+  </form>
+{% endblock content %}

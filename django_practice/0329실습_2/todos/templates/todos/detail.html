@@ -1,0 +1,16 @@
+{% extends 'todos/base.html' %}
+
+{% block content %}
+
+  <p>제목 -
+    {{ todos.title}}</p>
+  <p>내용 -
+    {{ todos.content}}</p>
+  <p>우선순위 -
+    {{ todos.priority}}</p>
+  <p>마감기한 -
+    {{ todos.deadline}}</p>
+  <p>완료여부 -
+    {{ todos.completed}}</p>
+
+{% endblock content %}
