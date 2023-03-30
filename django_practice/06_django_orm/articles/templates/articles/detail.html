@@ -14,7 +14,7 @@
       글번호:
       {{ article.pk }}</p>
     <p>
-      글번호:
+      글제목:
       {{ article.title }}</p>
     <p>
       내용:
@@ -25,6 +25,11 @@
     <p>
       수정일:
       {{ article.updated_at}}</p>
+    <form action="{% url 'articles:delete' article.pk %}" method='POST'>
+      {% csrf_token %}
+      <input type="submit" value='삭제'>
+    </form>
+    <a href="{% url 'articles:edit' article.pk %}">[edit]</a>
     <a href="{% url 'articles:index' %}">[back]</a>
   </body>
 

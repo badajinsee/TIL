@@ -1,0 +1,33 @@
+{% extends 'todos/base.html' %}
+
+{% block content %}
+
+  <form action="{% url 'todos:create'%}" method="POST">
+    {% csrf_token %}
+    <div>
+      {% comment %} 제목 {% endcomment %}
+      <div class="m-5 w-25 mt-3 mb-3">
+        <label for="formGroupExampleInput" class="form-label">할 일 제목</label>
+        <input type="text" class="form-control" name='title'>
+      </div>
+      {% comment %} 내용 {% endcomment %}
+      <div class="m-5 w-25  mt-3 mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">할 일 생성</label>
+        <textarea class="form-control" rows="3" name='content'></textarea>
+      </div>
+      {% comment %} 우선순위 {% endcomment %}
+      <div class="m-5 w-25 mt-3 mb-3">
+        <label for="formGroupExampleInput" class="form-label">우선순위</label>
+        <input type="number" class="form-control" name='priority'>
+      </div>
+      {% comment %} 마감기한 {% endcomment %}
+      <div class="m-5 w-25 mt-3 mb-3">
+        <label for="formGroupExampleInput" class="form-label">마감기한</label>
+        <input type="date" class="form-control" name='deadline'>
+      </div>
+      {% comment %} 버튼 {% endcomment %}
+      <button type="submit" class="btn btn-outline-primary m-5 mt-3 mb-3">할 일 생성</button>
+    </div>
+
+  </form>
+{% endblock content %}

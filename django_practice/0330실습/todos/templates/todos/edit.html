@@ -1,0 +1,34 @@
+{% extends 'todos/base.html' %}
+
+{% block content %}
+
+<h1>edit page</h1>
+<form action="{% url 'todos:update' todo.pk%}" method="GET">
+    {% csrf_token %}
+    {% comment %} 제목 {% endcomment %}
+    <div class="m-5 w-25 mt-3 mb-3">
+      <label for="formGroupExampleInput" class="form-label">할 일 제목</label>
+      <input type="text" class="form-control" name='title' value="{{ todo.title }}">
+    </div>
+    {% comment %} 내용 {% endcomment %}
+    <div class="m-5 w-25  mt-3 mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">할 일 생성</label>
+      <textarea class="form-control" rows="3" name='content' >{{ todo.content }}</textarea>
+    </div>
+    {% comment %} 우선순위 {% endcomment %}
+    <div class="m-5 w-25 mt-3 mb-3">
+      <label for="formGroupExampleInput" class="form-label">우선순위</label>
+      <input type="number" class="form-control" name='priority' value="{{todo.priority}}">
+    </div>
+    {% comment %} 마감기한 {% endcomment %}
+    <div class="m-5 w-25 mt-3 mb-3">
+      <label for="formGroupExampleInput" class="form-label">마감기한</label>
+      <input type="date" class="form-control" name='deadline' value="{{ todo.deadline|date:'Y-m-d' }}">
+    </div>
+    {% comment %} 버튼 {% endcomment %}
+    <input type="submit" value="update">
+</form>
+<hr>
+<a href="{% url 'todos:index' %}">[back]</a>
+
+{% endblock content %}

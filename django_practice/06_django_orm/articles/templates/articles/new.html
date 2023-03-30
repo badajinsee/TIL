@@ -10,7 +10,8 @@
 
   <body>
     <h1>new</h1>
-    <form action="{% url 'articles:create' %}" method="GET">
+    <form action="{% url 'articles:create' %}" method="POST">
+      {% csrf_token %}
       <div>
         <label for="title">제목:</label>
         <input type="text" name="title"><br>
