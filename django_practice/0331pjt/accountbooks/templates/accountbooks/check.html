@@ -1,0 +1,8 @@
+{% extends 'accountbooks/base.html' %} {% block content %} {% for accountbook in
+accountbooks %}
+
+<a href="{% url 'accountbooks:detail' accountbook.pk %}"
+  ><div>ID {{ accountbook.pk }} - {{ accountbook.note }}</div></a
+>
+
+{% endfor %} {% endblock content %}

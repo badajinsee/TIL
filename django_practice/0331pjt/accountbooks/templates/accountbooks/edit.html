@@ -1,0 +1,118 @@
+{% extends 'accountbooks/base.html' %} {% block content %}
+
+<h1>Edit page</h1>
+<form action="{% url 'accountbooks:update' accountbook.pk %}" method="POST">
+  <div class="card mt-2" style="width: 20rem">
+    <div class="card-body p-3">
+      {% csrf_token %}
+      <div>
+        <label for="note" class="mb-1">내용</label>
+        <input
+          type="type"
+          class="form-control mb-2"
+          name="note"
+          style="width: 15rem"
+          id="note"
+          value="{{ accountbook.note }}"
+        />
+      </div>
+
+      <div>
+        <label for="category" class="mb-1">분류</label>
+        <select
+          class="form-select mb-2"
+          name="category"
+          style="width: 10rem"
+          id="category"
+          aria-label="Default select example"
+        >
+          <option value="selected">{{accountbook.category}}</option>
+          <option value="식비">식비</option>
+          <option value="통신비">통신비</option>
+          <option value="기타">기타</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="amount" class="mb-1">사용 금액</label>
+        <input
+          type="number"
+          class="form-control mb-2"
+          name="amount"
+          style="width: 10rem"
+          id="amount"
+          value="{{ accountbook.amount}}"
+        />
+      </div>
+
+      <div>
+        <label for="date" class="mb-1">사용 날짜</label>
+        <input
+          type="date"
+          class="form-control mb-2"
+          name="date"
+          style="width: 10rem"
+          id="date"
+          value="{{ accountbook.date|date:'Y-m-d' }}"
+        />
+      </div>
+
+      <div>
+        <label for="description" class="mb-1">메모</label>
+        <textarea
+          class="form-control mb-2"
+          name="description"
+          id="description"
+          style="width: 18rem; height: 7rem"
+        >
+{{ accountbook.description }}</textarea
+        >
+      </div>
+
+      {% if accountbook.category == "식비" %}
+
+      <div>
+        <img
+          src="https://img.freepik.com/premium-vector/cute-food-illustration-character_553316-15.jpg?w=2000"
+          class="img-fluid"
+          alt="..."
+        />
+      </div>
+
+      {% elif accountbook.category == '통신비' %}
+      <div>
+        <img
+          src="https://mblogthumb-phinf.pstatic.net/20140315_57/zjalxm_1394863569604xmiDf_JPEG/1%27%27%27.jpg?type=w2"
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+
+      {% elif accountbook.category == '기타' %}
+      <div>
+        <img
+          src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F217663415361EDB616"
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="button-group mt-3">
+    <button type="submit" class="btn btn-outline-success mx-1">
+      수정 완료!
+    </button>
+    <button type="submit" class="btn btn-outline-secondary mx-1" value="DELETE">
+      삭제
+    </button>
+  </div>
+</form>
+<a href="{% url 'accountbooks:index' %}">
+  <button type="submit" class="btn btn-outline-primary mx-1 mt-2">
+    뒤로 가기
+  </button>
+</a>
+{% endblock content %}
