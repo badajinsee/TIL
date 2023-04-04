@@ -12,15 +12,7 @@
     <h1>new</h1>
     <form action="{% url 'articles:create' %}" method="POST">
       {% csrf_token %}
-      <div>
-        <label for="title">제목:</label>
-        <input type="text" name="title"><br>
-      </div>
-      <div>
-        <label for="title">내용:</label>
-        {% comment %} <input type="text" name="content"> {% endcomment %}
-        <textarea name="content" id="content" cols="30" rows="10"></textarea>
-      </div>
+      {{ form.as_p }}
 
       <input type="submit">
     </form>

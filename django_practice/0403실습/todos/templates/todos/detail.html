@@ -1,0 +1,16 @@
+{% extends 'todos/base.html' %}
+
+{% block content %}
+  <h1>DETAIL</h1>
+  <h2>{{todo.pk}}</h2>
+  <hr>
+  <p>제목:{{ todo.title }}</ㅔ>
+  <p>내용:{{ todo.content }}</p>
+  <p>우선순위:
+    {{ todo.priority }}</p>
+  <p>마감일:
+    {{ todo.deadline }}</p>
+  <hr>
+  <a href="{% url 'todos:delete' todo.pk%}">[delete]</a>
+
+{% endblock content %}

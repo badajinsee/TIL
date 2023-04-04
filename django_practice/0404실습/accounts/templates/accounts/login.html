@@ -9,13 +9,12 @@
   </head>
 
   <body>
-    <h1>Edit</h1>
-    <form action="{% url 'articles:update' article.pk %}" method="POST">
+    <h1>로그인</h1>
+    <form action="{% url 'accounts:login' %}" method="POST">
       {% csrf_token %}
-      {{ form.as_p }}
-      <input type="submit" value='[update]'>
+      {{form.as_p}}
+      <input type="submit">
     </form>
-    <a href="{% url 'articles:index' %}">[back]</a>
   </body>
 
 </html>
