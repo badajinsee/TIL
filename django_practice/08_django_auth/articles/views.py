@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Article
 from .forms import ArticleForm
-
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def index(request):
@@ -48,7 +48,7 @@ def detail(request, pk):
     # }
     # return render(request, 'articles/new.html', context)
 
-
+@login_required
 def create(request):
     # HTTP requests method가 POST라면
     if request.method == 'POST':
@@ -66,7 +66,7 @@ def create(request):
 
 
 
-
+@login_required
 def delete(request, artilce_pk):
     # 삭제할 데이터 조회
     article = Article.objects.get(pk=artilce_pk)
@@ -106,7 +106,7 @@ def delete(request, artilce_pk):
     # }
     # return render(request, 'articles/edit.html', context)
 
-
+@login_required
 def update(request, article_pk):
     article = Article.objects.get(pk=article_pk)
     if request.method == 'POST':
