@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block style %}
+  <style>
+    a {
+      text-decoration-line: none;
+    }
+  </style>
+
+{% endblock style %}
+
+{% block content %}
+
+  <table class="table table-hover mt-2">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">제목</th>
+        <th scope="col">카테고리</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for post in posts %}
+
+        <tr>
+          <th scope="row">
+            {{post.pk}}</th>
+          <td>
+            <a href="{% url 'posts:detail' post.pk %}">{{post.title}}</a>
+          </td>
+          <td>{{post.category}}</td>
+        </tr>
+      {% endfor %}
+
+    </tbody>
+  </table>
+{% endblock content %}

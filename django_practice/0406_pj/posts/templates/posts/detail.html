@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block style %}
+  <style>
+    a {
+      text-decoration-line: none;
+    }
+    p {
+      margin: 0px;
+    }
+  </style>
+{% endblock style %}
+
+{% block content %}
+  
+  <div class="card" style="width: 18rem;">
+    {% if post.category == '개발' %}
+      <img src="https://img.animalplanet.co.kr/news/2021/09/11/700/w9urv84pf7m19giuo9d9.jpg" class="card-img-top" >
+    <div class="card-body">
+    {% elif post.category == 'CS' %}
+      <img src="https://velog.velcdn.com/images/heelieben/post/0fd6012b-1c07-4271-9a64-d8f92d65db2c/image.png"class="card-img-top" >
+      
+    {% elif post.category == '신기술' %}
+      <img src="https://velog.velcdn.com/images/heelieben/post/33a67fb4-edd9-475b-b5e7-6a5f765f601f/image.png"class="card-img-top" >
+    {% endif %}
+    {% comment %} 내용 {% endcomment %}
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><p>글 번호 : {{post.pk}}</p></li>
+        <li class="list-group-item"><p>글 제목 : {{post.title}}</p></li>
+        <li class="list-group-item"><p>글 내용 : {{post.content}}</p></li>
+        <li class="list-group-item"><p>카테고리 : {{post.category}}</p></li>
+      </ul>  
+      <hr class='m-0 mb-2'>
+
+      <div class="d-flex justify-content-end">
+        <a href="{% url 'posts:update' post.pk %}">
+          <button type="button" class="btn btn-primary btn-sm me-1">UPDATE</button>
+        </a>
+        <a href="{% url 'posts:delete' post.pk %}">
+          <button type="button" class="btn btn-danger btn-sm me-1">DELETE</button>
+        </a>
+        <a href="{% url 'posts:index' %}">
+          <button type="button" class="btn btn-dark btn-sm me-1">BACK</button>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+{% endblock content %}
